@@ -12,7 +12,7 @@ First, one needs to compile Open-MPI to obtain a ```mpi.jar```. The following st
 
 Download a recent Open-Mpi [tar-all](https://www.open-mpi.org/software/ompi/v4.1/).
 
-Follow the [instrcutions](https://github.com/open-mpi/ompi/blob/master/README.md#quick-start) from the open-mpi repo.
+Follow the [instrcutions](https://github.com/open-mpi/ompi/blob/master/docs/installing-open-mpi/quickstart.rst) from the open-mpi repo.
 In the configure step one needs to follow the [java instructions](https://github.com/open-mpi/ompi/blob/master/docs/features/java.rst#building-the-java-bindings)
 though. I used the following commands: 
 ```
