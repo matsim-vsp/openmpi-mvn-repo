@@ -18,7 +18,7 @@ though. I used the following commands:
 ```
 $ tar xf openmpi-<version>.tar.bz2
 $ cd openmpi-<version>
-$ ./configure --prefix=<path/to/where/the/installation/should/go> ----enable-mpi-java 
+$ ./configure --prefix=<path/to/where/the/installation/should/go> --enable-mpi-java 
 ...lots of output...
 $ make -j 8 
 ...lots of output...
