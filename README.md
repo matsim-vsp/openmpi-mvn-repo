@@ -32,13 +32,16 @@ After the previous step there should be a ```mpi.jar``` under ```openmpi-<versio
 can be used as a dependency in a java program. It was deployed into this maven repository by using the command in the 
 [deploy script](https://github.com/matsim-vsp/openmpi-mvn-repo/blob/master/mvn-deploy.sh)
 
+Unfortunately, I figured out later, that one can't simply download things from there. Therefore I put the prduced artifacts
+into an [AWS-Bucket](https://openmpi-java-bindings.s3.eu-central-1.amazonaws.com/)
+
 ## Include this in a maven build
 To include the dependency in your maven build, add this repository to the list of repositories:
 ```
 <repository>
     <id>Open-MPI</id>
     <name>VSP Repo for the MPI Java Binings</name>
-    <url>https://github.com/matsim-vsp/openmpi-mvn-repo</url>
+    <url>https://openmpi-java-bindings.s3.eu-central-1.amazonaws.com/</url>
 </repository>
 ```
 Then add a dependency
