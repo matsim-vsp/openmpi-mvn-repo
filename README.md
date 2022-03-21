@@ -27,6 +27,8 @@ $ make install
 ```
 This still gave errors and didn't finish, but run sufficiently far to have produced the necessary ```mpi.jar```
 
+In case another Java version than the default one should be used, the ```./configure``` can be configured via ```--with-jdk-dir=/path/to/desired/jdk/```
+
 After the previous step there should be a ```mpi.jar``` under ```openmpi-<version>/ompi/mpi/java/java```. 
 ```openmpi-<version>```Is the folder the tar ball was extracted into. This jar 
 can be used as a dependency in a java program. It was deployed into this maven repository by using the command in the 
